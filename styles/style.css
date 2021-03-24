@@ -233,7 +233,7 @@ h2.clip_text {
   align-items: center;
   justify-items: center;
   width: 80%;
-  height: 80%;
+  padding-bottom: 1rem;
 }
 
 .banner_wide {
@@ -252,7 +252,7 @@ h2.clip_text {
   justify-items: center;
   background-color: hsla(180, 90%, 90%, 1);
   width: 100%;
-  margin-top: 2rem;
+  padding-top: 3rem;
 }
 
 .banner_text {
@@ -301,8 +301,6 @@ nav {
   grid-template-columns: repeat(10, minmax(10vw, 1fr));
   justify-items: center;
   align-items: center;
-  align-content: space-between;
-  justify-content: space-between;
   background-color: var(--azure);
   z-index: 9;
   width: 100vw;
@@ -333,21 +331,25 @@ nav.short_nav {
 
 .nav_logo {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 95%;
   z-index: 3;
 }
 
 .nav_title {
   color: white;
-  width: 12vh;
-  height: 5vw;
-  padding: 1rem 2.5rem 1rem 1rem;
+  width: 10vh;
+  margin-right: 0.5rem;
+  padding-top: 0.4rem;
+  padding-right: 1.6rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.3rem;
   background-color: var(--violet);
   font-family: "Oldenburg", "Lucida Sans Unicode", "Lucida Grande";
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 800;
   text-align: center;
+  border-radius: 1rem;
+  line-height: 1.1;
 }
 
 .nav_link {
@@ -371,6 +373,10 @@ nav.short_nav {
   background-color: var(--violet);
 }
 
+.nav_link_front {
+  z-index: 9;
+}
+
 .short_link {
   transform: rotate(0deg);
   border-radius: 0;
@@ -382,10 +388,12 @@ nav.short_nav {
   background-color: var(--violet);
   font-family: "Ubuntu", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   font-weight: 700;
-  font-size: 0.8rem;
-  padding: 0.5rem 0.1rem;
+  font-size: 0.7rem;
+  line-height: 1.1;
+  padding: 0.1rem 0.2rem 0.6rem 0.6rem;
   text-align: left;
   align-self: start;
+  border-bottom-left-radius: 1rem;
 }
 
 .hide_time {
@@ -652,10 +660,11 @@ nav.short_nav {
   padding: 1vmin;
   text-align: left;
   font-size: 1rem;
+  line-height: 1.4rem;
 }
 
 .text_kontakt {
-  grid-area: 5 / 4 / 10 / 10;
+  grid-area: 4 / 4 / 10 / 10;
   z-index: 1;
   color: var(--blue);
   background-color: hsla(180, 70%, 70%, 0.95);
@@ -665,6 +674,7 @@ nav.short_nav {
   padding: 1vmin;
   text-align: center;
   font-size: 1rem;
+  line-height: 1.9rem;
 }
 
 .page_picture_kontakt {
@@ -975,7 +985,6 @@ h1.front_page_title {
   font-weight: 600;
   text-align: left;
   width: 100%;
-  height: 20vh;
 }
 
 footer {
@@ -1573,7 +1582,13 @@ footer {
 
 @media all and (min-width: 960px) and (max-width: 1199px) {
   .tri_container {
-    grid: repeat(3, 1fr) / 1fr;
+    grid: none;
+    grid-template-rows: 3fr 1fr 2fr;
+  }
+
+  h1.front_page_title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .logo_head_box {
@@ -1603,7 +1618,13 @@ footer {
 
 @media all and (min-width: 768px) and (max-width: 959px) {
   .tri_container {
-    grid: repeat(3, 1fr) / 1fr;
+    grid: none;
+    grid-template-rows: 3fr 1fr 2fr;
+  }
+
+  h1.front_page_title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .logo_head_box {
@@ -1683,7 +1704,7 @@ footer {
   }
 
   .text_kontakt {
-    grid-area: 6 / 4 / 11 / 10;
+    grid-area: 6 / 4 / 10 / 10;
     font-size: 1.1rem;
   }
 
@@ -1694,8 +1715,14 @@ footer {
 
 @media all and (min-width: 480px) and (max-width: 767px) {
   .tri_container {
-    grid: repeat(3, 1fr) / 1fr;
+    grid: none;
+    grid-template-rows: 3fr 1fr 2fr;
     background-image: url(../img/slhd/hrozny_dva_gold_makro.jpg);
+  }
+
+  h1.front_page_title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .logo_head_box {
@@ -1790,7 +1817,7 @@ footer {
   }
 
   .text_kontakt {
-    grid-area: 5 / 4 / 10 / 10;
+    grid-area: 5 / 4 / 9 / 10;
     font-size: 1.3rem;
   }
 
@@ -1801,9 +1828,15 @@ footer {
 
 @media all and (max-width: 479px) {
   .tri_container {
-    padding-top: 8rem;
-    grid: repeat(3, 1fr) / 1fr;
+    padding-top: 1rem;
+    grid: none;
+    grid-template-rows: 3fr 1fr 2fr;
     background-image: url(../img/cohd/list_brown_violet_yellow_green.jpg);
+  }
+
+  h1.front_page_title {
+    padding: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .banner_text {
@@ -2024,7 +2057,7 @@ footer {
   .text_kontakt {
     width: auto;
     height: auto;
-    grid-area: 6 / 2 / 10 / 10;
+    grid-area: 6 / 2 / 8 / 10;
     padding: 1vmin;
     font-size: 1.4rem;
   }
