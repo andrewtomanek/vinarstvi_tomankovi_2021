@@ -248,7 +248,7 @@ h2.clip_text {
 
 .banner_pic-small {
   height: 100%;
-  width: 50%;
+  width: 40%;
 }
 
 .banner_violet {
@@ -269,7 +269,7 @@ h2.clip_text {
   text-align: left;
   line-height: 1.8rem;
   font-size: 1.1rem;
-  width: 50%;
+  width: 60%;
 }
 
 b.alarm {
@@ -988,7 +988,7 @@ h1.front_page_title {
   font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 600;
-  text-align: left;
+  padding: 1rem;
   width: 100%;
 }
 
@@ -1008,9 +1008,9 @@ footer {
 }
 
 .adress {
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .link_email {
@@ -1033,6 +1033,10 @@ footer {
 }
 
 .doba {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 1rem;
@@ -1040,7 +1044,7 @@ footer {
 
 .time_logo {
   display: block;
-  width: 10vw;
+  width: 8vw;
 }
 
 .mapa {
@@ -1054,12 +1058,12 @@ footer {
 }
 
 .mapa_img {
-  width: 100%;
+  width: 90%;
 }
 
 .logo_foot {
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 
 .loader_wrapper {
@@ -1224,8 +1228,8 @@ footer {
   position: fixed;
   bottom: 2vh;
   right: 2vw;
-  width: 8vh;
-  height: 8vh;
+  width: 5vh;
+  height: 5vh;
   z-index: 9;
   background-color: var(--azure);
   border-radius: 50% 0% 50% 0%;
@@ -1241,7 +1245,7 @@ footer {
 
 .grape {
   display: grid;
-  grid: repeat(2, 3vh) / repeat(3, 2vh);
+  grid: repeat(2, 2vh) / repeat(3, 1vh);
   justify-content: space-around;
   justify-items: center;
   align-items: center;
@@ -1672,6 +1676,12 @@ footer {
     height: 0;
   }
 
+  .logo_foot {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
   .left_top {
     grid-area: 1 / 1 / 7 / 6;
     width: 80%;
@@ -1833,7 +1843,7 @@ footer {
   .tri_container {
     padding-top: 1rem;
     grid: none;
-    grid-template-rows: 3fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
     background-image: url(../img/cohd/list_brown_violet_yellow_green.jpg);
   }
 
@@ -1877,11 +1887,13 @@ footer {
     grid-area: 2/ 1 / 2 / 1;
     display: grid;
     grid-auto-flow: row;
+    gap: 1rem;
     font-size: 1rem;
     font-weight: 500;
-    text-align: left;
-    width: 100%;
-    height: auto;
+  }
+
+  .link_mapa {
+    width: 25%;
   }
 
   .mapa_img {
