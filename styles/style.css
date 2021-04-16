@@ -167,18 +167,12 @@ h1.main_title {
 
 h2.clip_text {
   z-index: 3;
-  padding: 0.1rem 0.1rem;
-  color: transparent;
+  padding: 0.5rem 0.1rem;
+  color: var(--azure);
   font-family: "Lucida Grande", sans-serif;
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 900;
-  background-image: url(../img/bkg/list_back_green_zoom_makro_vyrez.jpg);
-  background-color: var(--azure);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 2s linear;
 }
 
 .clip_box {
@@ -188,31 +182,13 @@ h2.clip_text {
 }
 
 #clip_uvod {
-  background-image: url(../img/bkg/list_red_makro_vyrez.jpg);
-  height: 50vh;
-  line-height: 11vh;
-}
-
-#clip_prodej {
-  background-image: url(../img/bkg/list_green_makro_sun.jpg);
+  height: 35vh;
+  line-height: 8vh;
 }
 
 #clip_rouby {
-  background-image: url(../img/bkg/list_back_green_vyrez_makro.jpg);
-  height: 70vh;
-  line-height: 13vh;
-}
-
-#clip_clanky {
-  background-image: url(../img/bkg/list_red_bright_makro.jpg);
-}
-
-#clip_odrudy {
-  background-image: url(../img/bkg/list_green_yellow_makro_vyrez_vertical.jpg);
-}
-
-#clip_kontakt {
-  background-image: url(../img/bkg/list_red_bright_makro.jpg);
+  height: 30vh;
+  line-height: 9vh;
 }
 
 .banner {
@@ -233,7 +209,7 @@ h2.clip_text {
   align-items: center;
   justify-items: center;
   width: 80%;
-  padding-bottom: 1rem;
+  padding: 2rem 0 3rem;
 }
 
 .banner_wide {
@@ -269,7 +245,7 @@ h2.clip_text {
   text-align: left;
   line-height: 1.8rem;
   font-size: 1.1rem;
-  width: 60%;
+  width: 50%;
 }
 
 b.alarm {
@@ -413,6 +389,11 @@ nav.short_nav {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+}
+
+.filter_box {
+  grid-area: 1 / 1 / 11 / 11;
+  background-color: hsla(180, 90%, 90%, 0.7);
 }
 
 #p1i1 {
@@ -575,6 +556,10 @@ nav.short_nav {
   background-image: url(../img/bkg/stanice_jaro_garaz.jpg);
 }
 
+.modalclass {
+  cursor: pointer;
+}
+
 .move {
   transition: all 1s linear;
   opacity: 0;
@@ -587,49 +572,25 @@ nav.short_nav {
   transform: translate(0, 0) scale(1) rotate(0deg);
 }
 
-.page_picture_top {
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.left_top {
-  grid-area: 1 / 1 / 7 / 6;
-  width: 90%;
-  height: 90%;
+.right_bottom {
+  grid-area: 7 / 7 / 10 / 10;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
 }
 
 .right_top {
-  grid-area: 1 / 7 / 7 / 11;
+  grid-area: 2 / 6 / 7 / 10;
   width: 90%;
   height: 90%;
+  border-radius: 1rem;
 }
 
 .page_picture_top:hover {
-  width: 90%;
-  height: 90%;
   filter: hue-rotate(210deg);
 }
 
-.page_picture_down {
-  border-radius: 10%;
-  cursor: pointer;
-}
-
-.right_down {
-  grid-area: 7 / 6 / 11 / 11;
-  width: 90%;
-  height: 90%;
-}
-
-.left_down {
-  grid-area: 7 / 2 / 11 / 7;
-  width: 90%;
-  height: 90%;
-}
-
 .page_picture_down:hover {
-  width: 90%;
-  height: 90%;
   filter: hue-rotate(210deg);
 }
 
@@ -649,10 +610,16 @@ nav.short_nav {
 .parallax_pic {
   width: 120vw;
   height: 120vh;
+  filter: blur(0.1rem);
 }
 
-.text_box {
-  grid-area: 4 / 2 / 5 / 10;
+.text_box-right {
+  grid-area: 2 / 2 / 10 / 6;
+  z-index: 1;
+}
+
+.text_box-left {
+  grid-area: 6 / 2 / 10 / 6;
   z-index: 1;
 }
 
@@ -918,7 +885,7 @@ _:-webkit-full-screen,
   align-items: center;
   justify-items: center;
   justify-content: space-around;
-  width: 90%;
+  width: 80%;
   height: 90%;
 }
 
@@ -1557,14 +1524,15 @@ footer {
     display: grid;
   }
 
-  .left_top {
-    grid-area: 1 / 1 / 7 / 6;
-    width: 80%;
-    height: 80%;
+  .right_bottom {
+    grid-area: 6 / 7 / 10 / 10;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
   }
 
   .right_top {
-    grid-area: 1 / 7 / 7 / 11;
+    grid-area: 2 / 6 / 7 / 10;
     width: 80%;
     height: 80%;
   }
@@ -1682,14 +1650,15 @@ footer {
     height: 0;
   }
 
-  .left_top {
-    grid-area: 1 / 1 / 7 / 6;
-    width: 80%;
-    height: 80%;
+  .right_bottom {
+    grid-area: 6 / 7 / 10 / 10;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
   }
 
   .right_top {
-    grid-area: 1 / 7 / 7 / 11;
+    grid-area: 2 / 6 / 7 / 10;
     width: 80%;
     height: 80%;
   }
@@ -1795,14 +1764,15 @@ footer {
     height: 0;
   }
 
-  .left_top {
-    grid-area: 1 / 1 / 7 / 6;
-    width: 80%;
-    height: 80%;
+  .right_bottom {
+    grid-area: 6 / 7 / 10 / 10;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
   }
 
   .right_top {
-    grid-area: 1 / 7 / 7 / 11;
+    grid-area: 2 / 6 / 7 / 10;
     width: 80%;
     height: 80%;
   }
@@ -1845,6 +1815,10 @@ footer {
     grid: none;
     grid-template-rows: 2fr 1fr 2fr;
     background-image: url(../img/cohd/list_brown_violet_yellow_green.jpg);
+  }
+
+  .page_content {
+    padding-bottom: 20vh;
   }
 
   h1.front_page_title {
@@ -1892,6 +1866,26 @@ footer {
     font-weight: 500;
   }
 
+  .text_box-right {
+    grid-area: 6 / 2 / 10 / 10;
+  }
+
+  .text_box-left {
+    grid-area: 6 / 2 / 10 / 10;
+  }
+
+  .right_bottom {
+    grid-area: 2 / 2 / 6 / 10;
+    width: 100%;
+    height: 80%;
+  }
+
+  .right_top {
+    grid-area: 2 / 2 / 6 / 10;
+    width: 100%;
+    height: 80%;
+  }
+
   .link_mapa {
     width: 25%;
   }
@@ -1903,7 +1897,7 @@ footer {
 
   .content_box {
     display: grid;
-    grid: repeat(10, 15vh) / repeat(10, 10vw);
+    grid: repeat(10, 5vh) / repeat(10, 10vw);
   }
 
   h1.main_title {
@@ -2042,20 +2036,6 @@ footer {
     display: none;
     width: 0;
     height: 0;
-  }
-
-  .page_picture_top {
-    grid-area: 1 / 2 / 5 / 10;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  .page_picture_down {
-    grid-area: 6 / 2 / 10 / 10;
-    width: 100%;
-    height: 100%;
-    border-radius: 0%;
   }
 
   .parallax_box {
