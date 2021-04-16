@@ -697,7 +697,7 @@ nav.short_nav {
   z-index: 2;
   border-radius: 50%;
   overflow: hidden;
-  border: 1rem ridge var(--blue);
+  border: 0.5rem solid var(--blue);
 }
 
 .circle_image {
@@ -1818,7 +1818,7 @@ footer {
   }
 
   .page_content {
-    padding-bottom: 20vh;
+    padding-bottom: 25vh;
   }
 
   h1.front_page_title {
@@ -2050,9 +2050,7 @@ footer {
   }
 
   .text_kontakt {
-    width: auto;
-    height: auto;
-    grid-area: 6 / 2 / 8 / 10;
+    grid-area: 5 / 2 / 11 / 10;
     padding: 1vmin;
     font-size: 1.4rem;
   }
