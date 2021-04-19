@@ -610,6 +610,7 @@ nav.short_nav {
   overflow: hidden;
   width: 100%;
   background-color: var(--azure);
+  filter: drop-shadow(0 0 3rem hsla(180, 40%, 40%, 1));
 }
 
 .parallax_wrap {
@@ -689,6 +690,7 @@ nav.short_nav {
   overflow: hidden;
   width: 100%;
   height: 100vh;
+  filter: drop-shadow(0 0 3rem hsla(180, 40%, 40%, 1));
   background: no-repeat center/cover
       url(../img/bkg/list_back_green_vyrez_makro.jpg),
     var(--azure);
@@ -1213,19 +1215,20 @@ footer {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: hsla(270, 60%, 60%, 1);
+  background-color: hsla(205, 90%, 90%, 1);
 }
 
 .article_text {
   width: 90%;
   height: auto;
   color: var(--blue);
-  background-color: hsla(205, 90%, 90%, 1);
+  background-color: hsla(205, 97%, 97%, 1);
   font-family: "Cardo", "Lucida Sans Unicode", "Lucida Grande";
   font-weight: 700;
   border-radius: 1rem;
   padding: 2vmin;
   text-align: center;
+  line-height: 1.4rem;
   font-size: 1rem;
 }
 
@@ -1677,7 +1680,7 @@ footer {
   }
 
   .content_picture {
-    height: 20vh;
+    height: 25vh;
   }
 
   .text_box-right {
