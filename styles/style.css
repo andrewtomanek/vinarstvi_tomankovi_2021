@@ -704,7 +704,7 @@ nav.short_nav {
   grid-area: 1 / 1 / 11 / 11;
   width: 250vw;
   height: 70vh;
-  background-color: var(--violet);
+  background-color: var(--azure);
   transform: rotate(30deg);
   z-index: 1;
 }
@@ -1635,7 +1635,7 @@ footer {
   }
 
   .page_content {
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
   }
 
   h1.front_page_title {
