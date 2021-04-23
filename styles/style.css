@@ -113,42 +113,44 @@ header.short_top {
   align-content: space-around;
   justify-items: center;
   align-items: center;
-  background-image: url(../img/sld/borsice_kostel_side_jaro_kvet_longshot.jpg);
+  background-image: url(../img/slhd/borsice_kostel_side_jaro_kvet_longshot.jpg);
   background-color: var(--azure);
-  background-size: 100vw 100vh;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 #top_historie {
-  background-image: url(../img/sld/stanice-skalka1920x1080.jpg);
+  background-image: url(../img/slhd/stanice-skalka1920x1080.jpg);
 }
 
 #top_prodej {
-  background-image: url(../img/sld/sklep_demizon_zaver_znak_deatil.jpg);
+  background-image: url(../img/slhd/sklep_demizon_zaver_znak_deatil.jpg);
 }
 
 #top_rouby {
-  background-image: url(../img/sld/sazenice_kvetinace_hromada.jpg);
+  background-image: url(../img/slhd/sazenice_kvetinace_hromada.jpg);
 }
 
 #top_odrudy {
-  background-image: url(../img/sld/hrozny_dva_pink_sunlense.jpg);
+  background-image: url(../img/slhd/hrozny_dva_pink_sunlense.jpg);
 }
 
 #top_kontakt {
-  background-image: url(../img/sld/stanice_top_cut.jpg);
+  background-image: url(../img/slhd/vinohrad_10_cedule_center_sun.jpg);
 }
 
 #top_clanky {
-  background-image: url(../img/sld/list_sun_back_yellow.jpg);
+  background-image: url(../img/slhd/list_sun_back_yellow.jpg);
 }
 
 /*_:-ms-lang(x),
 _:-webkit-full-screen,*/
 header {
-  background-image: url(../img/sld/winter_2021_front_left.jpg);
+  background-image: url(../img/slhd/prodejna_jaro_left_front_long.jpg);
   background-color: var(--azure);
-  background-size: 100vw 100vh;
+  background-size: cover;
+  background-position: center center;
 }
 
 h1.main_title {
@@ -425,11 +427,11 @@ nav.short_nav {
 }
 
 #p1i4 {
-  background-image: url(../img/bkhd/vinice_2_radky_slunce_offfocus.jpg);
+  background-image: url(../img/bkhd/prodejna_jaro_sochy_center_left_zoom.jpg);
 }
 
 #p1i4.lazyback {
-  background-image: url(../img/bkg/vinice_2_radky_slunce_offfocus.jpg);
+  background-image: url(../img/bkg/prodejna_jaro_sochy_center_left_zoom.jpg);
 }
 
 #p2i1 {
@@ -457,11 +459,11 @@ nav.short_nav {
 }
 
 #p2i4 {
-  background-image: url(../img/bkhd/radky_sazenice.jpg);
+  background-image: url(../img/bkhd/jaro_tazen_tree_macro.jpg);
 }
 
 #p2i4.lazyback {
-  background-image: url(../img/bkg/radky_sazenice.jpg);
+  background-image: url(../img/bkg/jaro_tazen_tree_macro.jpg);
 }
 
 #p3i1 {
@@ -473,11 +475,11 @@ nav.short_nav {
 }
 
 #p3i2 {
-  background-image: url(../img/bkhd/stanice_radek_back_side_1920x1080.jpg);
+  background-image: url(../img/bkhd/prodejna_nadoby_nerez.jpg);
 }
 
 #p3i2.lazyback {
-  background-image: url(../img/bkg/stanice_radek_back_side_1920x1080.jpg);
+  background-image: url(../img/bkg/prodejna_nadoby_nerez.jpg);
 }
 
 #p3i3 {
@@ -489,11 +491,11 @@ nav.short_nav {
 }
 
 #p3i4 {
-  background-image: url(../img/bkhd/stanice_back_right_vinice.jpg);
+  background-image: url(../img/bkhd/prodejna_jaro_closeup_right_front.jpg);
 }
 
 #p3i4.lazyback {
-  background-image: url(../img/bkg/stanice_back_right_vinice.jpg);
+  background-image: url(../img/bkg/prodejna_jaro_closeup_right_front.jpg);
 }
 
 #p4i1 {
@@ -513,19 +515,19 @@ nav.short_nav {
 }
 
 #p4i3 {
-  background-image: url(../img/bkhd/stanice_vinice_sazenice.jpg);
+  background-image: url(../img/bkhd/jaro_tazen_ocko_right_back.jpg);
 }
 
 #p4i3.lazyback {
-  background-image: url(../img/bkg/stanice_vinice_sazenice.jpg);
+  background-image: url(../img/bkg/jaro_tazen_ocko_right_back.jpg);
 }
 
 #p4i4 {
-  background-image: url(../img/bkhd/sazenice_tyc_listy_zoom_bright.jpg);
+  background-image: url(../img/bkhd/prodejna_jaro_tazen_zoom_back.jpg);
 }
 
 #p4i4.lazyback {
-  background-image: url(../img/bkg/sazenice_tyc_listy_zoom_bright.jpg);
+  background-image: url(../img/bkg/prodejna_jaro_tazen_zoom_back.jpg);
 }
 
 #p5i1 {
@@ -537,27 +539,27 @@ nav.short_nav {
 }
 
 #p5i2 {
-  background-image: url(../img/bkhd/stanice_right_front_long_top.jpg);
+  background-image: url(../img/bkhd/prodejna_jaro_front_right_side.jpg);
 }
 
 #p5i2.lazyback {
-  background-image: url(../img/bkg/stanice_right_front_long_top.jpg);
+  background-image: url(../img/bkg/prodejna_jaro_front_right_side.jpg);
 }
 
 #p5i3 {
-  background-image: url(../img/bkhd/stanice_jaro_back_side.jpg);
+  background-image: url(../img/bkhd/jaro_tower_center.jpg);
 }
 
 #p5i3.lazyback {
-  background-image: url(../img/bkg/stanice_jaro_back_side.jpg);
+  background-image: url(../img/bkg/jaro_tower_center.jpg);
 }
 
 #p5i4 {
-  background-image: url(../img/bkhd/stanice_jaro_garaz.jpg);
+  background-image: url(../img/bkhd/prodejna_jaro_road_trees_right.jpg);
 }
 
 #p5i4.lazyback {
-  background-image: url(../img/bkg/stanice_jaro_garaz.jpg);
+  background-image: url(../img/bkg/prodejna_jaro_road_trees_right.jpg);
 }
 
 .move {
@@ -758,7 +760,7 @@ nav.short_nav {
   justify-items: center;
   justify-content: space-around;
   width: 100vw;
-  background-image: url(../img/bkhd/winter_2021_long_shop.jpg);
+  background-image: url(../img/bkhd/vinohrad_radovany_hluchavky_center_detail.jpg);
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
